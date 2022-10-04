@@ -1,1 +1,265 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网页</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* 去掉链接的下划线颜色改成黑色 */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 去掉li前面的小圆点 */
+        li {
+            list-style: none;
+        }
+
+        .zong {
+            width: 1260px;
+
+        }
+
+        /* span 行内元素尽量只设置左右的内外边距 */
+        .nav {
+            height: 41px;
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            background-color: #fcfcfc;
+            /* padding会撑大盒子 */
+            line-height: 41px;
+        }
+
+        .nav a {
+            /* a 属于行内元素 此时必须要转换行内块元素 */
+            display: inline-block;
+            height: 41px;
+            padding: 0 20px;
+            font-size: 12px;
+            color: #4c4c4c;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #eee;
+            color: #ff8500;
+
+        }
+
+        .diyige {
+            width: 298px;
+            height: 460px;
+            /* border-radius: 10px; */
+            /* display: inline-block; */
+            background-color: #fff;
+            /* margin-bottom: 20px; */
+            margin: 5px auto;
+            float: left;
+
+
+        }
+
+        .diyige:hover {
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+        }
+
+        .diyige img {
+            width: 100%;
+        }
+
+        .biaoqian {
+            height: 70;
+            font-size: 14px;
+            padding: 0 28px;
+            margin-top: 30px;
+        }
+
+        .pingjia {
+            font-size: 12px;
+            color: #b0b0b0;
+            margin-top: 20px;
+            padding: 0 28px;
+        }
+
+        .info h4 {
+            display: inline-block;
+            font-weight: 400;
+
+
+        }
+
+        .info span {
+            color: #ff6700;
+        }
+
+        .info {
+            margin-top: 15px;
+            padding: 0 28px;
+            font-size: 14px;
+        }
+
+        .info em {
+            font-style: normal;
+            color: #ebe4e0;
+            margin: 0 6px 0 15px;
+        }
+
+
+        .beiwanglu {
+            width: 248px;
+            height: 163px;
+            /* display: inline-block; */
+            /* background-color: pink; */
+            margin: 5px auto;
+            /* text-align: center; */
+            border: 1px solid #ccc;
+            float: left;
+
+        }
+
+        .beiwanglu h3 {
+            height: 32px;
+            padding-left: 15px;
+            border-bottom: 1px dotted #ccc;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+
+        .beiwanglu ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 12px;
+
+        }
+
+        .beiwanglu ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .beiwanglu ul {
+            margin-top: 7px;
+        }
+
+        .beiwanglu ul li {
+            height: 23px;
+            line-height: 23px;
+            padding-left: 20px;
+
+        }
+
+
+
+        .yuanjiao {
+            width: 200px;
+            height: 200px;
+            /* border-radius: 10px 50px; */
+            border-radius: 50%;
+            background-color: pink;
+            margin: 5px auto;
+            /* border-top: 3px solid red;  */
+            overflow: hidden;
+        }
+
+        .disige {
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+            margin-top: 50px;
+            /* float: left; */
+
+
+        }
+
+        .shadow {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 10px auto;
+            float: left;
+
+        }
+
+        .shadow:hover {
+            box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+        }
+
+        .wenziyinying {
+            width: 200px;
+            height: 200;
+            font-size: 50px;
+            font-weight: 700;
+            color: orange;
+            text-shadow: 5px 5px 3px rgba(0, 0, 0, .3);
+            margin: 10px auto;
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- div+a  -->
+
+    <div class="nav">
+        <a href="#">衡水超算项目</a>
+        <a href="#">郑州超算项目</a>
+        <a href="#">太原超算项目</a>
+        <a href="#">乌镇超算项目</a>
+        <a href="#">哈尔滨超算项目</a>
+        <a href="#">成都超算项目</a>
+        <a href="#">衡水超算项目 地址：河北省衡水市桃城区</a>
+    </div>
+
+
+
+    <div class="zong">
+        <div class="diyige">
+            <a href="#"><img src="images/76ed63f158dd6d1a1c5dd0c1e92c741c_1.jpg" alt="tianmei"></a>
+            <p class="biaoqian"><a href="#">我家宝宝，可爱的自拍，让人无法自拔，永远是那么的迷人</a></p>
+            <div class="pingjia">来自于165468432的评价</div>
+            <div class="info">
+                <h4><a href="#">世界上最美的女人...</a></h4> <em>|</em><span> 99.9元</span>
+            </div>
+
+        </div>
+
+
+        <div class="beiwanglu">
+            <h3>备忘录</h3>
+            <ul>
+                <li><a href="# ">【1】买苹果15</a></li>
+                <li><a href="# ">【2】打扫卫生</a></li>
+                <li><a href="# ">【3】制造惊喜</a></li>
+                <li><a href="# ">【4】好好学习，天天向上</a></li>
+                <li><a href="# ">【5】享受生活，爱自己</a></li>
+            </ul>
+        </div>
+
+        <div class="yuanjiao">
+            <div class="disige">
+                123
+            </div>
+        </div>
+        <div class="shadow">
+
+        </div>
+        <div class="wenziyinying">文字阴影</div>
+    </div>
+
+</body>
+
+</html>
