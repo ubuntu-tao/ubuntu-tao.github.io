@@ -1,0 +1,13 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-top: 18px;
+    border-bottom: 2px solid #c81523;
+}
+
+div {
+    display: block;
+}
